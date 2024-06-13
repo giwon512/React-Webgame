@@ -38,12 +38,12 @@ module.exports = {
 
     output : {
         path : path.join(__dirname, 'dist'),
-        filename : 'app.js',
+        filename : '[name].js',
         publicPath : '/dist',
     }, //출력
     devServer: {
         devMiddleware: { publicPath: '/dist' },
         static: { directory: path.resolve(__dirname) },
-        hot: true
+        hot: true,
     }
-}
+};
